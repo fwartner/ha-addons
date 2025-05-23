@@ -1,0 +1,21 @@
+name: "n8n"
+description: "n8n - Workflow Automation Tool"
+version: "1.0.0"
+slug: "n8n"
+arch:
+  - amd64
+  - aarch64
+  - armv7
+startup: services
+boot: auto
+init: false
+ingress: true
+panel_icon: mdi:workflow
+panel_title: n8n
+options:
+  port: 5678
+schema:
+  port: int
+environment:
+  N8N_PORT: 5678
+  N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS: 'true'
